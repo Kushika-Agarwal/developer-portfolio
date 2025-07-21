@@ -1,0 +1,73 @@
+export const projectsData = [
+  {
+    id: 1,
+    name: "Meeting Scheduler",
+    description: `Developed a meeting scheduling platform allowing users to create, share, and manage meeting slots. Implemented real-time availability updates to prevent double bookings. Enabled automated scheduling with slot selection.`,
+    tools: ["Next.js", "Supabase", "React.js", "Node.js"],
+    role: "Full Stack Developer",
+    code: "https://github.com/Kushika-Agarwal/FOSScheduler",
+    demo: "https://foss-scheduler.vercel.app/",
+  },
+  {
+    id: 2,
+    name: "Collaborative Code Editor",
+    description: `Built a real-time collaborative code editor where multiple users can code together using a shared Room ID. The app allows live messaging, real-time cursor tracking, and shows who is typing. Easy room sharing enables seamless collaboration.`,
+    tools: ["React.js", "Node.js", "Socket.io", "Express", "Monaco Editor"],
+    role: "Full Stack Developer",
+    code: "https://github.com/Kushika-Agarwal/Collaborative-code-editor",
+    demo: "https://codeeditor-app.onrender.com](https://collaborative-code-editor-0qwj.onrender.com",
+  },
+  {
+    id: 3,
+    name: "Booking Management System",
+    description: `Designed and developed the full-stack booking management system with user and admin interfaces. Built an admin panel for booking approvals, user management, and system monitoring. Implemented a secure backend with optimized performance.`,
+    tools: ["Laravel", "PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+    role: "Full Stack Developer",
+    code: "https://github.com/Kushika-Agarwal/booking-management",
+    demo: "https://foss-scheduler.vercel.app/",
+  },
+  {
+    id: 4,
+    name: "QR Code Generator",
+    description: `Developed a simple and fast QR code generator that converts any URL into a downloadable QR code. The tool is useful for link sharing, event invites, or product packaging.`,
+    tools: ["HTML", "CSS", "JavaScript", "QRCode.js"],
+    role: "Frontend Developer",
+    code: "https://github.com/Kushika-Agarwal/Qr-Code-Generator",
+    demo: "",
+  },
+  {
+    id: 5,
+    name: "Portfolio Website",
+    description: `Developed a modern personal portfolio website with smooth animations, beautiful UI, contact form with email functionality, QR code generation support, reCAPTCHA protection, and responsive design.`,
+    tools: [
+      "Next.js",
+      "React 19",
+      "Tailwind CSS",
+      "Lottie React",
+      "EmailJS",
+      "React Icons",
+      "React Toastify",
+      "Axios",
+      "Nodemailer",
+      "Sharp",
+      "Google reCAPTCHA",
+      "Sass",
+    ],
+    role: "Frontend Developer",
+    code: "",
+    demo: "",
+  },
+];
+
+// Do not remove any property.
+// Leave it blank instead as shown below
+
+// {
+//     id: 1,
+//     name: '',
+//     description: "",
+//     tools: [],
+//     role: '',
+//     code: '',
+//     demo: '',
+// },
