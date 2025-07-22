@@ -82,7 +82,11 @@ import kubernetes from '../app/assets/svg/skills/kubernetes.svg'
 import linux from '../app/assets/svg/skills/linux.svg'
 import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg'
 import fastapi from '../app/assets/svg/skills/fastapi.svg'
-
+import expressjs from '../app/assets/svg/skills/expressjs.svg';
+import nodejs from '../app/assets/svg/skills/nodejs.svg';
+import dsa from '../app/assets/svg/skills/dsa.svg';
+import restapi from '../app/assets/svg/skills/restapi.svg';
+import github from '../app/assets/svg/skills/github.svg';
 
 
 export const skillsImage = (skill) => {
@@ -254,6 +258,16 @@ export const skillsImage = (skill) => {
       return sqlalchemy;
     case 'fastapi':
       return fastapi;
+    case 'express.js':
+      return expressjs;
+    case 'node.js':
+      return nodejs;
+    case 'data structures and algorithms':
+      return dsa;
+    case 'restful apis':
+      return restapi;
+    case 'github':
+      return github;
     default:
       break;
   }

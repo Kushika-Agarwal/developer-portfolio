@@ -26,6 +26,7 @@ function Skills() {
         </div>
       </div>
 
+      {/* Technical Skills Marquee */}
       <div className="w-full my-12">
         <Marquee
           gradient={false}
@@ -36,7 +37,7 @@ function Skills() {
           play={true}
           direction="left"
         >
-          {skillsData.map((skill, id) => (
+          {skillsData.technical.map((skill, id) => (
             <div className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
               key={id}>
               <div className="h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 group-hover:border-violet-500 transition-all duration-500">
@@ -63,6 +64,23 @@ function Skills() {
             </div>
           ))}
         </Marquee>
+      </div>
+
+      {/* Soft Skills Section */}
+      <div className="max-w-4xl mx-auto mt-8">
+        <div className="bg-[#18143a] border border-[#25213b] rounded-xl p-6 shadow-lg flex flex-col items-center">
+          <h3 className="text-white text-lg font-semibold mb-4">Soft Skills</h3>
+          <div className="flex flex-wrap gap-4 justify-center">
+            {skillsData.soft.map((skill, idx) => (
+              <span
+                key={idx}
+                className="bg-[#1a1443] text-[#16f2b3] px-4 py-2 rounded-full text-sm font-medium border border-[#25213b] shadow-sm"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
