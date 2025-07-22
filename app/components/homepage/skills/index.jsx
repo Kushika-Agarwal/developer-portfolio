@@ -4,6 +4,16 @@ import { skillsData } from "@/utils/data/skills";
 import { skillsImage } from "@/utils/skill-image";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import { FaUsers, FaComments, FaLightbulb, FaClock, FaTasks, FaChalkboardTeacher } from "react-icons/fa";
+
+const softSkillIcons = {
+  "Leadership": <FaChalkboardTeacher className="text-2xl text-[#16f2b3]" />,
+  "Team Collaboration": <FaUsers className="text-2xl text-[#16f2b3]" />,
+  "Public Speaking": <FaComments className="text-2xl text-[#16f2b3]" />,
+  "Problem-Solving": <FaLightbulb className="text-2xl text-[#16f2b3]" />,
+  "Time Management": <FaClock className="text-2xl text-[#16f2b3]" />,
+  "Event Coordination": <FaTasks className="text-2xl text-[#16f2b3]" />,
+};
 
 function Skills() {
   return (
@@ -66,18 +76,19 @@ function Skills() {
         </Marquee>
       </div>
 
-      {/* Soft Skills Section */}
+      {/* Enhanced Soft Skills Section */}
       <div className="max-w-4xl mx-auto mt-8">
-        <div className="bg-[#18143a] border border-[#25213b] rounded-xl p-6 shadow-lg flex flex-col items-center">
-          <h3 className="text-white text-lg font-semibold mb-4">Soft Skills</h3>
-          <div className="flex flex-wrap gap-4 justify-center">
+        <div className="bg-gradient-to-br from-[#18143a] to-[#1a1443] border border-[#25213b] rounded-xl p-8 shadow-xl flex flex-col items-center">
+          <h3 className="text-white text-xl font-bold mb-6 tracking-wide">Soft Skills</h3>
+          <div className="flex flex-wrap gap-6 justify-center">
             {skillsData.soft.map((skill, idx) => (
-              <span
+              <div
                 key={idx}
-                className="bg-[#1a1443] text-[#16f2b3] px-4 py-2 rounded-full text-sm font-medium border border-[#25213b] shadow-sm"
+                className="flex flex-col items-center bg-[#23204a] border border-[#25213b] rounded-lg px-6 py-4 shadow-md hover:shadow-violet-500/30 transition-all duration-300 min-w-[140px] animate-fade-in"
               >
-                {skill}
-              </span>
+                {softSkillIcons[skill] || <FaLightbulb className="text-2xl text-[#16f2b3]" />}
+                <span className="mt-2 text-[#16f2b3] font-semibold text-base text-center">{skill}</span>
+              </div>
             ))}
           </div>
         </div>
