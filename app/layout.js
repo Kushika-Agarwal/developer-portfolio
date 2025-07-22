@@ -13,6 +13,26 @@ export const metadata = {
   title: "Portfolio of Kushika Agarwal - Software Developer",
   description:
     "This is the portfolio of Kushika. I am a full stack developer and a self taught developer. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
+  openGraph: {
+    title: "Portfolio of Kushika Agarwal - Software Developer",
+    description: "This is the portfolio of Kushika. I am a full stack developer and a self taught developer. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
+    images: [
+      {
+        url: "/profile.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Portfolio of Kushika Agarwal - Software Developer",
+      },
+    ],
+    url: "https://developer-portfolio-ashen-five.vercel.app/",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Portfolio of Kushika Agarwal - Software Developer",
+    description: "This is the portfolio of Kushika. I am a full stack developer and a self taught developer. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
+    images: ["/profile.jpg"],
+  },
 };
 
 export default function RootLayout({ children }) {
