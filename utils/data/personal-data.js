@@ -9,9 +9,9 @@ export const personalData = {
   address: "Kanpur, Uttar Pradesh, India",
   github: "https://github.com/Kushika-Agarwal",
   facebook: "404",
-  linkedIn: "https://www.linkedin.com/in/abu-said-bd/",
-  twitter: "https://twitter.com/said7388",
-  stackOverflow: "https://stackoverflow.com/users/16840768/abu-said",
+  linkedIn: "https://www.linkedin.com/in/kushika-agarwal/",
+  twitter: "/",
+  stackOverflow: "/",
   leetcode: "https://leetcode.com/u/Kushika_Agarwal/",
   devUsername: "Kushika_Agarwal",
   resume:
